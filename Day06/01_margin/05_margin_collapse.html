@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin collapse 현상</title>
+    <link rel="stylesheet" href="css/05_margin_collapse.css">
+</head>
+<body>
+    <h1>margin collapse 현상</h1>
+    <!-- margin이 위아래로 만날 때 상쇄 -->
+    <div class="container">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </div>
+    <hr>
+
+    <h1>margin collapse 해결1 - padding</h1>
+    <!-- 내부여백으로 대체 -->
+    <div class="container">
+        <section class="solve-1"></section>
+        <section class="solve-1"></section>
+        <section class="solve-1"></section>
+    </div>
+
+    <h1>margin collapse 해결2 - border</h1>
+    <!-- 위쪽 테두리 그러나 1px 추가됨 -->
+    <div class="container">
+        <div class="solve-2"><section></section></div>
+        <div class="solve-2"><section></section></div>
+        <div class="solve-2"><section></section></div>
+    </div>
+
+    <h1>margin collapse 해결3 - 마진을 한쪽으로만</h1>
+    <div class="container">
+        <section class="solve-3"></section>
+        <section class="solve-3"></section>
+        <section class="solve-3"></section>
+    </div>
+</body>
+</html>

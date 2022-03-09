@@ -68,6 +68,10 @@ a {
     box-sizing: border-box;
 }
 
+/* 
+    ::placeholder
+    - input 태그에 placeholder 속성을 선택하는 가상선택자
+*/
 #login .login-inputbox input::placeholder {
     color: #aaa;
 }
@@ -78,7 +82,7 @@ a {
     left: 0;
     width: 0;
     height: 0;
-    border: 1px solid cornflowerblue;
+    border: 0px solid cornflowerblue;
     background-color: cornflowerblue;
 }
 

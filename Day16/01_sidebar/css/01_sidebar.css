@@ -1,0 +1,38 @@
+
+* {margin: 0; padding: 0;}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    position: fixed; /* 브라우저 기준 */
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: royalblue;
+    color: white;
+}
+
+/* 
+    :not(선택자) - 가상선택자
+    - '선택자'를 제외하고 선택
+*/
+.sidebar a:hover:not(.active) {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 10px 20px;
+    height: 1000px;
+}

@@ -1,0 +1,39 @@
+* {margin: 0; padding: 0;}
+
+.container {
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    border: 3px dashed orange;
+}
+
+ul {list-style-type: none;}
+a {text-decoration: none; color: black;}
+
+header nav {float: left; height: 50px; text-align: center;}
+header nav .mainmenu {width: 600px; line-height: 60px;}
+
+/* 1차 메뉴 */
+header nav .mainmenu > li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    color: black;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+header nav .mainmenu > li:hover {background-color: royalblue;}
+header nav .mainmenu > li:hover > a {color: white;}
+
+/* 1차 메뉴에 마우스 호버시, 2차 메뉴 전부 출력 */
+header nav .mainmenu:hover .submenu {display: block;}
+
+/* 2차 메뉴 */
+header nav .submenu {display: none;}
+header nav .submenu li {
+    background-color: #ddd; transition: all 0.4s;
+}
+header nav .submenu li a {color: black;}
+header nav .submenu li:hover {background-color: cornflowerblue;}
+header nav .submenu li:hover a {color: white;}

@@ -1,0 +1,53 @@
+
+* {margin: 0; padding: 0;}
+
+.wrap {position: relative; overflow: hidden;}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    position: absolute; /* 부모 요소 position 속성이 relative로 설정돼야 함 */
+    left: -200px;
+    transition: all 1s ease-in-out;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: royalblue;
+    color: white;
+}
+
+/* 
+    :not(선택자) - 가상선택자
+    - '선택자'를 제외하고 선택
+*/
+.sidebar a:hover:not(.active) {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 10px 20px;
+    height: 1000px;
+}
+
+/* 체크박스 출력X */
+input[name='category'] {display: none;}
+
+/* user-select
+    - 드래그 허용기준을 지정하는 속성 */
+.btn {cursor: pointer; user-select: none;}
+
+/* category를 체크했을 때, 사이드바 슬라이드 */
+input#category:checked ~ .sidebar {
+    left: 0;
+}

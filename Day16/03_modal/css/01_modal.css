@@ -1,0 +1,52 @@
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+#modal {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightseagreen;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#modal .img-box {
+    width: 100%;
+    height: 520px;
+}
+#modal .img-box img {
+    width: 100%;
+    height: 520px;
+    object-fit: fill;
+}
+
+#modal .modal-bottom {height: 80px; background-color: black;}
+#modal .modal-bottom .text {
+    color: white;
+    line-height: 80px;
+    font-size: 20px;
+    padding: 0 20px;
+    width: 320px;
+    height: 100%;
+    float: left;
+}
+#modal .modal-bottom .close {
+    width: 80px;
+    height: 100%;
+    background-color: blueviolet;
+    float: right;
+}
+
+input[type='checkbox'] {
+    padding: 10px;
+    transform: scale(2);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+label {
+
+}

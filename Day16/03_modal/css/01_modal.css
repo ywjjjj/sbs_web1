@@ -48,5 +48,5 @@ input[type='checkbox'] {
 }
 
 label {
-
+    cursor: pointer;
 }
